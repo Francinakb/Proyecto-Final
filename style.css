@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Rubik+Wet+Paint&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(multimedia/dbd.jpg);
+    background-size: cover;
+    background-attachment: fixed
+}
+
+h1 {
+    font-size: 70px;
+    color: #CACFD2;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+nav {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+nav a {
+    font-family: 'Akshar', sans-serif;
+    color: #FDFEFE;
+}
+
+.main-div {
+    margin-left: 100px;
+    padding-left: 50px;
+    margin-bottom: 100px;
+}
+
+.video1 {
+    margin-top: 50px;
+    margin-right: 25px;
+}
+
+section {
+    padding: 20px;
+}
+
+.section-grid {
+    font-family: 'Akshar', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 80px);
+    gap: 3px 3px;
+    grid-template-areas:
+        "lorem-1 lorem-1 lorem-1 lorem-1"
+        "lorem-2 lorem-2 lorem-3 lorem-3"
+        "lorem-4 lorem-4 lorem-4 lorem-4"
+}
+
+.lorem-1 {
+    grid-area: lorem-1;
+    background-color: #660000;
+}
+
+.lorem-2 {
+    grid-area: lorem-2;
+    background-color: #660000;
+}
+
+.lorem-3 {
+    grid-area: lorem-3;
+    background-color: #660000;
+}
+
+.lorem-4 {
+    grid-area: lorem-4;
+    background-color: #660000;
+}
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: solid green;
+    margin-top: 100px;
+}
+
+footer,
+.footer_pages {
+    margin-top: 500px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .section-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 200px);
+        gap: 3px 3px;
+        grid-template-areas:
+            "lorem-1 lorem-1"
+            "lorem-2 lorem-3"
+            "lorem-4 lorem-4"
+            "lorem-4 lorem-4"
+    }
+
+    .lorem-1 {
+        grid-area: lorem-1;
+        background-color: #660000;
+    }
+
+    .lorem-2 {
+        grid-area: lorem-2;
+        background-color: #660000;
+    }
+
+    .lorem-3 {
+        grid-area: lorem-3;
+        background-color: #660000;
+    }
+
+    .lorem-4 {
+        grid-area: lorem-4;
+        background-color: #660000;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .section-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 200px);
+        gap: 3px 3px;
+        grid-template-areas:
+            "lorem-1 lorem-1"
+            "lorem-2 lorem-3"
+            "lorem-4 lorem-4"
+            "lorem-4 lorem-4"
+    }
+
+    .lorem-1 {
+        grid-area: lorem-1;
+        background-color: #660000;
+    }
+
+    .lorem-2 {
+        grid-area: lorem-2;
+        background-color: #660000;
+    }
+
+    .lorem-3 {
+        grid-area: lorem-3;
+        background-color: #660000;
+    }
+
+    .lorem-4 {
+        grid-area: lorem-4;
+        background-color: #660000;
+    }
+}
